@@ -1,0 +1,49 @@
+.container{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 60% 40%;
+	grid-template-areas: "header header"
+						 "nav nav"
+						 "main side"
+						 "footer footer"
+}
+
+header{
+	grid-area: header;
+	display: grid;
+	background-color:#038792;
+	opacity: 1;
+	grid-template-rows:1em auto auto 1em;
+	grid-auto-columns:3% 47% 47% 3%;
+	grid-template-areas:". . . ."
+						". title  search ."
+						". . icons ."
+						". . . .";
+	padding: 2em;
+	
+	
+}
+header > .title{
+    grid-area: title;
+    color:white;
+    
+
+	
+}
+
+header >.search{
+	grid-area: search;
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+header > .icons{
+	grid-area: icons;
+}
+
+footer{
+	grid-area: footer;
+	border-top: double #162B8E 4px;
+	text-align: center;
+}
