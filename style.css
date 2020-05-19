@@ -17,7 +17,7 @@ header{
 	grid-auto-columns:3% 47% 47% 3%;
 	grid-template-areas:". . . ."
 						". title  search ."
-						". . icons ."
+						". . . ."
 						". . . .";
 	padding: 2em;
 	
@@ -25,7 +25,9 @@ header{
 }
 header > .title{
     grid-area: title;
-    color:white;
+	color:white;
+	font-weight: bold;
+
     
 
 	
@@ -38,8 +40,7 @@ header >.search{
 	
 }
 
-header > .icons{
-	grid-area: icons;
+
 }
 nav{
 	grid-area: nav;
@@ -80,7 +81,7 @@ main>article{
 }
 .sidebar{
 	grid-area: side;
-	background-color: cyan;
+	background-color: rgb(9, 241, 241);
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	text-align: center;
 	margin: 5px;
